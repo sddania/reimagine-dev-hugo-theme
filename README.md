@@ -15,17 +15,16 @@ See a real usage here: <https://2019.devfesttoulouse.fr/>
 hugo new site my-conf
 cd my-conf
 mkdir themes
-git submodule add https://github.com/GDGToulouse/devfest-theme-hugo.git themes/devfest-theme-hugo
+git submodule add https://github.com/GDGToulouse/reimagine-dev-hugo-theme.git themes/reimagine-dev-hugo-theme
 ```
 
 3. Then edit your `config.toml` file with
 
 ```toml
 # ...
-theme = "devfest-theme-hugo"
+theme = "reimagine-dev-hugo-theme"
 # ...
 ```
-
 
 4. It's done. Just start Hugo server to see it live!
 
@@ -42,7 +41,6 @@ Run `npm start` to watch Sass changes.
 When you are happy with the result run `npm run build` to build the minified version
 
 ### Site params
-
 
 ```toml
 #...
@@ -105,19 +103,18 @@ googleAnalytics = "UA-XXXXXXXX-X"
 
 The top navigation bar is build with
 
-* Site title
-* Site parameter `logos.header` for the logo
-* Site languages if you need a multilingual site
-* Menu `main`
+- Site title
+- Site parameter `logos.header` for the logo
+- Site languages if you need a multilingual site
+- Menu `main`
 
 ### Footer
 
 The footer is build with
 
-* Site title
-* Site params `email`, `subscriptionUrl`, `logos.footer`, `copyright`
-* data from `data/footer.yml`
-
+- Site title
+- Site params `email`, `subscriptionUrl`, `logos.footer`, `copyright`
+- data from `data/footer.yml`
 
 ```yml
 share:
@@ -164,7 +161,7 @@ content:
 
 ### Home
 
-The Home page is build with markdown and calling some shortcodes. 
+The Home page is build with markdown and calling some shortcodes.
 
 #### Jumbo bloc
 
@@ -188,13 +185,12 @@ With main description and key figures.
 {{% home-info what="Participants:900,Day:1,Sessions:36,Parallel Tracks:4" class="primary" %}}
 ## What is DevFest Toulouse?
 
-The DevFest, or 'Developers Festival', is a technical conference for developers. 
+The DevFest, or 'Developers Festival', is a technical conference for developers.
 It is aimed at students, professionals or simply curious technophiles.
 {{% /home-info %}}
 ```
 
 ![](images/block-info.png)
-
 
 #### Feature speakers block
 
@@ -217,7 +213,6 @@ Just present your feature speakers
 
 ![](images/feature-speakers.png)
 
-
 #### Subscription block
 
 Call to subscribe
@@ -234,7 +229,6 @@ Use the site param `subscriptionUrl`.
 
 ![](images/subscribe.png)
 
-
 ### Ticket block
 
 Display ticket information.
@@ -243,7 +237,7 @@ Display ticket information.
 {{% home-tickets %}}
 # Tickets
 
-<ul>  
+<ul>
 <li>{{< ticket name="Blind Birds"
            starts="2019-04-04"
            ends="2019-11-08"
@@ -327,10 +321,9 @@ Show your partners
 
 ![](images/block-album.png)
 
-
 ### Partners
 
-A partner should have this params : 
+A partner should have this params :
 
 ```yaml
 title: NAME
@@ -347,7 +340,7 @@ A speaker should have this params :
 
 ```yaml
 id: jane_doe
-name: Mme Jane Doe 
+name: Mme Jane Doe
 company: Super Company
 featured: false
 photo: /images/speakers/jane_doe.jpg
@@ -358,7 +351,7 @@ socials:
   - icon: github
     link: 'https://github.com/jane_doe'
     name: jane_doe
-shortBio: "Short bio"
+shortBio: 'Short bio'
 companyLogo: /images/speakers/company/company.jpg
 country: 'City, Country'
 ```
@@ -425,10 +418,9 @@ Development scheduled to summer 2019.
 
 just classique markdown file, this the `menu.main.weight: 80` to be displayed into the navbar.
 
-
 ### Notes
 
-* We focus on English and French in this theme, so with other language, you should add months into the `layouts/partials/date-short.html`
+- We focus on English and French in this theme, so with other language, you should add months into the `layouts/partials/date-short.html`
 
 ## License
 

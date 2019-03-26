@@ -1,22 +1,22 @@
 :root {
-  --primary: #673AB7;
+  --primary: #4285f4;
   --primary-txt: #fff;
 
   --accent: grey;
   --accent-txt: #fff;
 
-  --base: #FFF;
+  --base: #fff;
   --base-text: #424242;
   --base-secondary-text: #636363;
   --link-secondary-text: #424242;
 
-  --darken-1: rgba(0, 0, 0, .125);
-  --darken-2: rgba(0, 0, 0, .25);
-  --darken-3: rgba(0, 0, 0, .5);
+  --darken-1: rgba(0, 0, 0, 0.125);
+  --darken-2: rgba(0, 0, 0, 0.25);
+  --darken-3: rgba(0, 0, 0, 0.5);
 
-  --lighten-1: hsla(0, 100%, 100%, .125);
-  --lighten-2: hsla(0, 100%, 100%, .25);
-  --lighten-3: hsla(0, 100%, 100%, .5);
+  --lighten-1: hsla(0, 100%, 100%, 0.125);
+  --lighten-2: hsla(0, 100%, 100%, 0.25);
+  --lighten-3: hsla(0, 100%, 100%, 0.5);
 
   --color-hero: ghostwhite;
 
@@ -24,9 +24,9 @@
   --color-gold: #b7935b;
   --color-error: firebrick;
 
-  --space-1: .125rem;
-  --space-2: .25rem;
-  --space-3: .5rem;
+  --space-1: 0.125rem;
+  --space-2: 0.25rem;
+  --space-3: 0.5rem;
   --space-4: 1rem;
 
   --breakpoint-sm: 34.375rem; // 540px
@@ -62,7 +62,7 @@
   --general: var(--tag8);
 
   /* Jumbo section */
-  --jumbo-logo-width: 400px;
+  --jumbo-logo-width: 600px;
   --jumbo-overlay-opacity: 0.6;
   --jumbo-overlay-transition: 0.5s;
 
@@ -77,7 +77,8 @@
   --extruded-light: 1px 0 0 var(--lighten-3);
 
   --box-shadow-1: 0 0 2px 0 rgba(0, 0, 0, 0.07), 0 2px 2px 0 rgba(0, 0, 0, 0.15);
-  --box-shadow-2: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+  --box-shadow-2: 0 3px 3px -2px rgba(0, 0, 0, 0.2),
+    0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
 
   /* Mark */
   --fg-mark-a: white;

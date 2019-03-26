@@ -1,8 +1,8 @@
 {
-  "name": "devfest-theme-hugo",
+  "name": "reimagine-dev-hugo-theme",
   "version": "1.0.0",
   "description": "A theme for a conference website. Created for DevFest Toulouse 2019",
-  "repository": "https://github.com/GDGToulouse/devfest-theme-hugo",
+  "repository": "https://github.com/GDGToulouse/reimagine-dev-hugo-theme",
   "author": "Igor Laborie <ilaborie@gmail.com>",
   "license": "MIT",
   "private": true,

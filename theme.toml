@@ -1,8 +1,8 @@
 name = "Devfest Toulouse Theme"
 license = "MIT"
-licenselink = "https://github.com/GDGToulouse/devfest-theme-hugo/LICENSE"
+licenselink = "https://github.com/GDGToulouse/reimagine-dev-hugo-theme/LICENSE"
 description = "A theme for a conference website. Created for DevFest Toulouse 2019"
-homepage = "https://github.com/GDGToulouse/devfest-theme-hugo"
+homepage = "https://github.com/GDGToulouse/reimagine-dev-hugo-theme"
 tags = ["conference", "DevFest"]
 features =  ["conference", "responsive", "l10n", "google-analytics"]
 min_version = "0.50"
