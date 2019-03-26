@@ -1,11 +1,10 @@
-
 .talk {
   .complexity::before {
-    content: 'Niveau : ';
+    content: 'Livello : ';
   }
 
   .type::before {
-    content: 'Type : ';
+    content: 'Tipo : ';
   }
 
   .type::after {
@@ -51,11 +50,8 @@
   }
 }
 
-
 .page.sessions {
-
   .talk {
-
     header {
       border-radius: var(--space-2);
       padding: var(--space-2);
@@ -102,8 +98,10 @@
         flex-direction: column;
         align-items: flex-start;
 
-        &:hover, &:focus {
-          box-shadow: var(--space-2) var(--space-2) var(--space-2) var(--darken-3);
+        &:hover,
+        &:focus {
+          box-shadow: var(--space-2) var(--space-2) var(--space-2)
+            var(--darken-3);
         }
 
         text-decoration: none;
@@ -146,7 +144,6 @@
         color: inherit;
       }
     }
-
   }
 }
 

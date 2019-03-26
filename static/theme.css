@@ -1076,13 +1076,13 @@ a .icon.icon-right {
   margin-left: var(--space-3);
 }
 .type-conférence {
-  --duration: '40';
+  --duration: '25';
 }
 .type-quickie {
   --duration: '15';
 }
 .type-keynote {
-  --duration: '40';
+  --duration: '25';
 }
 form {
   display: -webkit-flex;
@@ -1523,10 +1523,10 @@ form input:invalid {
   }
 }
 .talk .complexity:before {
-  content: 'Niveau : ';
+  content: 'Livello : ';
 }
 .talk .type:before {
-  content: 'Type : ';
+  content: 'Tipo : ';
 }
 .talk .type:after {
   font-weight: 100;
