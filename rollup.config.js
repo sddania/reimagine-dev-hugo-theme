@@ -1,5 +1,5 @@
-import resolve from 'rollup-plugin-node-resolve';
 import babel from 'rollup-plugin-babel';
+import resolve from 'rollup-plugin-node-resolve';
 
 const globals = {firebase: 'firebase'};
 
@@ -15,7 +15,5 @@ export default {
         })
     ],
     external: [
-        'firebase',
-        'firebase/firestore'
     ]
 }
