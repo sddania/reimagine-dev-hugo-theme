@@ -1,17 +1,4 @@
 .talk {
-  .complexity::before {
-    content: 'Livello : ';
-  }
-
-  .type::before {
-    content: 'Tipo : ';
-  }
-
-  .type::after {
-    font-weight: 100;
-    content: ' (' var(--duration, '') ' min.)';
-  }
-
   .speakers {
     .speaker {
       display: flex;

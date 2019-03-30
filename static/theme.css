@@ -717,15 +717,6 @@ a .icon.icon-subscribe, a .icon.icon-email {
 a .icon.icon-right {
   margin-left: var(--space-3); }
 
-.type-conférence {
-  --duration: '25'; }
-
-.type-quickie {
-  --duration: '15'; }
-
-.type-keynote {
-  --duration: '25'; }
-
 form {
   display: flex;
   flex-direction: column; }
@@ -949,7 +940,7 @@ form input {
   flex-wrap: wrap; }
   .section.sessions ul.talks li.talk, .taxonomy.tags ul.talks li.talk {
     margin: 1rem;
-    flex: 1 0 320px; }
+    flex: 1 0 640px; }
   .section.sessions ul.talks a, .taxonomy.tags ul.talks a {
     border: thin solid var(--darken-1);
     box-shadow: var(--space-1) var(--space-1) var(--space-2) var(--darken-2);
@@ -986,16 +977,6 @@ form input {
 @supports (grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))) {
   .section.sessions ul.talks, .taxonomy.tags ul.talks {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); } }
-
-.talk .complexity::before {
-  content: 'Livello : '; }
-
-.talk .type::before {
-  content: 'Tipo : '; }
-
-.talk .type::after {
-  font-weight: 100;
-  content: " (" var(--duration, "") " min.)"; }
 
 .talk .speakers .speaker {
   display: flex;

@@ -92,7 +92,7 @@ googleAnalytics = "UA-XXXXXXXX-X"
     languageName = "fr"
 
 [languages.fr.params]
-    description = "Le DevFest, ou 'Developers Festival', est une conférence technique destinée aux développeurs. Elle s'adresse aussi bien aux étudiants, aux professionnels ou tout simplement aux curieux technophiles."
+    description = "Le DevFest, ou 'Developers Festival', est une talk technique destinée aux développeurs. Elle s'adresse aussi bien aux étudiants, aux professionnels ou tout simplement aux curieux technophiles."
 
 [taxonomies]
   tag = "tags"
