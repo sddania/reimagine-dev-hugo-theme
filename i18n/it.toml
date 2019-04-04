@@ -29,10 +29,10 @@ other = "Come arrivare"
 other = "Condividi"
 
 [facebook_share_label]
-other = "Share on Facebook"
+other = "Condividi su Facebook"
 
 [twitter_share_text]
-other = "Come join us at @DevFestToulouse the unavoidable conference for Software developers in Toulouse, France #DevFestToulouse"
+other = "Segui https://reimagine.dev, la conferenza che per gli sviluppatori software. #reimaginedev"
 
 [twitter_share_label]
 other = "Share on Twitter"

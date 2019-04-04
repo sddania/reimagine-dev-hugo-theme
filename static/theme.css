@@ -940,7 +940,7 @@ form input {
   flex-wrap: wrap; }
   .section.sessions ul.talks li.talk, .taxonomy.tags ul.talks li.talk {
     margin: 1rem;
-    flex: 1 0 640px; }
+    flex: 1 0 320px; }
   .section.sessions ul.talks a, .taxonomy.tags ul.talks a {
     border: thin solid var(--darken-1);
     box-shadow: var(--space-1) var(--space-1) var(--space-2) var(--darken-2);

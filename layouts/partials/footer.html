@@ -39,42 +39,6 @@
 
 	<hr>
 
-	<div class="footer-content">
-		{{ range .Site.Data.footer.content }}
-		<section>
-			<header>{{ i18n .title }}</header>
-			{{ if .links }}
-			<ul>
-				{{ range .links }}
-				<li>
-					<a href="{{ .url }}" {{ if .newTab }}target="_blank" rel="noopener" {{end}}>
-						{{ if .nameKey }}
-						{{ i18n .nameKey }}
-						{{ else }}
-						{{ .name }}
-						{{ end }}
-					</a>
-				</li>
-				{{ end }}
-			</ul>
-			{{ end }}
-		</section>
-		{{ end }}
-		{{ if .Site.Params.subscriptionUrl }}
-		<section class="subscribe">
-			<header>{{ i18n "newsletter" }}</header>
-			<p>{{ i18n "subscribe_notice" }}</p>
-			<a href="{{ .Site.Params.subscriptionUrl }}"
-			   class="btn" rel="noreferrer" target="_blank">
-				{{ partial "icon.html" "subscribe" }}
-				{{- i18n "subscribe_action" -}}
-			</a>
-		</section>
-		{{ end }}
-	</div>
-
-	<hr>
-
 	<div class="footer-footer">
 		{{ if .Site.Params.logos.footer }}
 		<img src="{{ .Site.Params.logos.footer }}" alt="{{ .Site.Title }}">
