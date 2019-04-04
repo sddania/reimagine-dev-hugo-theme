@@ -32,7 +32,7 @@ other = "Condividi"
 other = "Condividi su Facebook"
 
 [twitter_share_text]
-other = "Segui https://reimagine.dev, la conferenza che per gli sviluppatori software. #reimaginedev"
+other = "Segui #reimaginedev, la conferenza per gli sviluppatori software."
 
 [twitter_share_label]
 other = "Share on Twitter"

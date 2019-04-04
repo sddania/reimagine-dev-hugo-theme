@@ -1,12 +1,12 @@
 <footer class="container">
-
+	<pre>{{ .URL | absLangURL }}</pre>
 	<div class="footer-header">
 		<div class="share">
 			<header>{{ i18n "footer_share" }}</header>
 			<ul class="social-list">
 				{{ range .Site.Data.footer.share }}
 				<li>
-					{{ $url := .URL | relLangURL }}
+					{{ $url := .URL | absLangURL }}
 					{{ partial "social-sharer.html" (dict "context" . "url" $url "name" .name) }}
 					{{ end }}
 			</ul>
