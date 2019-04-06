@@ -27,12 +27,11 @@
 		<div class="speaker-img" style="background-image: url({{ .Params.photo }});"></div>
 		<div class="info">
 			<strong class="speaker-name">{{ .Params.name }}</strong>
-			<span class="speaker-country">{{ .Params.country }}</span>
+			<figure class="speaker-company" >
+				<img src="{{ .Params.companyLogo }}">
+				<figcaption>{{ .Params.company }}</figcaption>
+			</figure>
 		</div>
-		<figure class="speaker-company" >
-			<img src="{{ .Params.companyLogo }}">
-			<figcaption>{{ .Params.company }}</figcaption>
-		</figure>
 	</li>
 	{{ end }}
 </ul>

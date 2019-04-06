@@ -1000,10 +1000,12 @@ form input {
   .talk .speakers .speaker .info {
     display: flex;
     flex-direction: column; }
-  .talk .speakers .speaker .speaker-company img {
-    height: 2rem; }
-  .talk .speakers .speaker .speaker-company figcaption {
-    display: none; }
+  .talk .speakers .speaker .speaker-company {
+    margin: 10px 0 0 0; }
+    .talk .speakers .speaker .speaker-company img {
+      height: 2rem; }
+    .talk .speakers .speaker .speaker-company figcaption {
+      display: none; }
   .talk .speakers .speaker p {
     max-width: 320px; }
 
