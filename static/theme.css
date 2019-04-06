@@ -1,6 +1,7 @@
 @charset "UTF-8";
 :root {
-  --primary: #4285f4;
+  --primary: #222;
+  --primary_old: #4285f4;
   --primary-txt: #fff;
   --accent: grey;
   --accent-txt: #fff;
