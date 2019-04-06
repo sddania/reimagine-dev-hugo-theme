@@ -114,7 +114,13 @@
     font-size: 1.5rem;
   }
   
-  .jumbo .jumbo-cover{
-    background-attachment: scroll;
+  .jumbo{
+    .jumbo-cover{
+      background-attachment: scroll;
+    }
+  }
+
+  .scroll-down{
+    visibility: hidden;
   }
 }

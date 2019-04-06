@@ -505,7 +505,9 @@ a.social {
     .jumbo .inner h1 img {
       max-width: 100%; }
   .jumbo .jumbo-cover {
-    background-attachment: scroll; } }
+    background-attachment: scroll; }
+  .scroll-down {
+    visibility: hidden; } }
 
 .hero h1 {
   padding: 2rem var(--container-margin); }
