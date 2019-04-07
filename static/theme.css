@@ -64,6 +64,9 @@
   --jumbo-logo-width: 600px;
   --jumbo-overlay-opacity: 0.3;
   --jumbo-overlay-transition: 0.5s;
+  /* Cfp section */
+  --cfp-bk: var(--tag4);
+  --cfp-fg: white;
   /* Partners */
   --partner-support-height: 60px;
   --partner-platinum-height: calc(var(--partner-support-height) * 3);
@@ -504,7 +507,7 @@ a.social {
   to {
     transform: translateY(0.65em); } }
 
-@media (max-width: 59.99em) {
+@media (max-width: 71.24em) {
   .jumbo .inner {
     max-width: 80vw;
     padding: 0; }
@@ -518,6 +521,14 @@ a.social {
     background-attachment: scroll; }
   .scroll-down {
     visibility: hidden; } }
+
+.cfp {
+  background-color: var(--cfp-bk);
+  color: var(--cfp-fg);
+  text-align: center;
+  cursor: pointer; }
+  .cfp h1 {
+    font-size: xx-large; }
 
 .hero h1 {
   padding: 2rem var(--container-margin); }

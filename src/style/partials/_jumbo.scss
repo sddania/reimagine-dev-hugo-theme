@@ -98,7 +98,7 @@
   }
 }
 
-@include mq($until: lg) {
+@include mq($until: xl) {
   .jumbo .inner {
     max-width: 80vw;
     padding: 0;
