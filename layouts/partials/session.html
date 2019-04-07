@@ -1,8 +1,7 @@
 <a href="{{ .URL }}">
 
 <h2>
-	{{ .Params.slot }} {{ .Title }} 
-	<span class="language {{ anchorize .Params.language }}"></span>
+	{{ emojify .Title }} 
 </h2>
 
 <hr>
@@ -16,10 +15,8 @@
 	</div>
 	{{ end }}
 
-	<div class="complexity">{{ .Params.complexity }}</div>
-	<div class="type type-{{ anchorize .Params.talkType }}">{{ .Params.talkType }}</div>
+	<div class="slot">{{ .Params.slot }}</div>
 </div>
-
 
 <ul class="speakers">
 	{{ range where .Site.RegularPages "Params.id" "in" .Params.speakers }}

@@ -31,7 +31,23 @@
 }
 
 .tag-general {
-  background-color: var(--general);
+  background-color: var(--general-bk);
+  color:var(--general-fg);
+}
+
+.tag-unconference {
+  background-color: var(--unconference-bk);
+  color:var(--unconference-fg);
+}
+
+.tag-break{
+  background-color: var(--break-bk);
+  color:var(--break-fg);
+}
+
+.tag-talk{
+  background-color: var(--talk-bk);
+  color:var(--talk-fg);
 }
 
 section .tags {

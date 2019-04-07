@@ -32,15 +32,18 @@
   --toolbar-height: 3.25rem;
   --font-family: 'Roboto', sans-serif;
   /* Tags */
-  /*from https://github.com/d3/d3-scale-chromatic#schemePastel2*/
-  --tag1: #b3e2cd;
-  --tag2: #fdcdac;
-  --tag3: #cbd5e8;
-  --tag4: #f4cae4;
-  --tag5: #e6f5c9;
-  --tag6: #fff2ae;
-  --tag7: #f1e2cc;
-  --tag8: #cccccc;
+  /*from https://github.com/d3/d3-scale-chromatic#schemeCategory10*/
+  /*   ["#1f77b4","#ff7f0e","#2ca02c","#d62728","#9467bd","#8c564b","#e377c2","#7f7f7f","#bcbd22","#17becf"] */
+  --tag1: #1f77b4;
+  --tag2: #ff7f0e;
+  --tag3: #2ca02c;
+  --tag4: #d62728;
+  --tag5: #9467bd;
+  --tag6: #8c564b;
+  --tag7: #e377c2;
+  --tag8: #7f7f7f;
+  --tag9: #bcbd22;
+  --tag10: #17becf;
   --native-mobile-apps: var(--tag2);
   --web: var(--tag6);
   --method-tools: var(--tag5);
@@ -49,7 +52,14 @@
   --cloud: var(--tag4);
   --languages: var(--tag1);
   --wtf: var(--tag7);
-  --general: var(--tag8);
+  --general-bk: var(--tag1);
+  --general-fg: white;
+  --talk-bk: var(--tag1);
+  --talk-fg: white;
+  --unconference-bk: var(--tag3);
+  --unconference-fg: white;
+  --break-bk: var(--tag2);
+  --break-fg: white;
   /* Jumbo section */
   --jumbo-logo-width: 600px;
   --jumbo-overlay-opacity: 0.3;
@@ -701,7 +711,20 @@ a.social {
   background-color: var(--wtf); }
 
 .tag-general {
-  background-color: var(--general); }
+  background-color: var(--general-bk);
+  color: var(--general-fg); }
+
+.tag-unconference {
+  background-color: var(--unconference-bk);
+  color: var(--unconference-fg); }
+
+.tag-break {
+  background-color: var(--break-bk);
+  color: var(--break-fg); }
+
+.tag-talk {
+  background-color: var(--talk-bk);
+  color: var(--talk-fg); }
 
 section .tags {
   padding: var(--space-1);
@@ -947,7 +970,7 @@ form input {
   flex-wrap: wrap; }
   .section.sessions ul.talks li.talk, .taxonomy.tags ul.talks li.talk {
     margin: 1rem;
-    flex: 1 0 320px; }
+    width: 100%; }
   .section.sessions ul.talks a, .taxonomy.tags ul.talks a {
     border: thin solid var(--darken-1);
     box-shadow: var(--space-1) var(--space-1) var(--space-2) var(--darken-2);
