@@ -535,6 +535,19 @@ a.social {
     border-radius: 4px;
     padding: 16px; }
 
+.home-link {
+  background-color: var(--base);
+  color: var(--cfp-fg);
+  text-align: center;
+  cursor: pointer; }
+  .home-link h1 {
+    font-size: xx-large; }
+  .home-link a {
+    display: block;
+    background-color: var(--darken-3);
+    border-radius: 4px;
+    padding: 16px; }
+
 .hero h1 {
   padding: 2rem var(--container-margin); }
 

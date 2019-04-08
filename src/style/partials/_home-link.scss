@@ -1,0 +1,17 @@
+.home-link{
+    background-color: var(--base);
+    color: var(--cfp-fg);
+    text-align: center;
+    cursor: pointer;
+
+    h1{
+        font-size: xx-large
+    }
+
+    a{
+        display: block;
+        background-color: var(--darken-3);
+        border-radius: 4px;
+        padding:16px;
+    }
+}
