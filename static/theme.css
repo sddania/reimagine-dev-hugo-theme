@@ -529,6 +529,11 @@ a.social {
   cursor: pointer; }
   .cfp h1 {
     font-size: xx-large; }
+  .cfp a {
+    display: block;
+    background-color: var(--darken-3);
+    border-radius: 4px;
+    padding: 16px; }
 
 .hero h1 {
   padding: 2rem var(--container-margin); }
