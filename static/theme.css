@@ -884,6 +884,15 @@ form input {
     @media (max-width: 71.24em) {
       .home main .info .inner {
         max-width: 100%; } }
+    .home main .info .inner a {
+      background-color: whitesmoke;
+      padding: 8px;
+      color: #444;
+      border-radius: 4px;
+      width: 100%;
+      display: block;
+      text-align: center;
+      font-size: x-large; }
   .home main .info .numbers {
     flex: 1 0 33vw;
     margin: 0 2rem;
