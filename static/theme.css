@@ -1009,8 +1009,9 @@ form input {
   flex-wrap: wrap; }
   .section.sessions ul.talks li.talk,
   .taxonomy.tags ul.talks li.talk {
-    margin: 1rem;
-    flex: 1 0 400px; }
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    flex: 1 0 320px; }
   .section.sessions ul.talks a,
   .taxonomy.tags ul.talks a {
     border: thin solid var(--darken-1);
@@ -1030,7 +1031,7 @@ form input {
     .taxonomy.tags ul.talks a .header {
       display: flex;
       justify-content: space-between;
-      align-items: start;
+      align-items: stretch;
       color: inherit; }
       .section.sessions ul.talks a .header .info,
       .section.sessions ul.talks a .header h2,
@@ -1040,12 +1041,13 @@ form input {
       .section.sessions ul.talks a .header .info,
       .taxonomy.tags ul.talks a .header .info {
         display: flex;
-        justify-content: space-between;
-        align-items: center; }
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: baseline; }
         .section.sessions ul.talks a .header .info .tags,
         .taxonomy.tags ul.talks a .header .info .tags {
-          margin-right: 5px;
-          padding: 5px; }
+          padding: var(--space-2);
+          margin-bottom: var(--space-2); }
     .section.sessions ul.talks a .speakers,
     .taxonomy.tags ul.talks a .speakers {
       border-radius: var(--space-2);
@@ -1055,11 +1057,6 @@ form input {
     .section.sessions ul.talks a .speaker + .speaker,
     .taxonomy.tags ul.talks a .speaker + .speaker {
       border-top: thin solid var(--darken-1); }
-
-@supports (grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))) {
-  .section.sessions ul.talks,
-  .taxonomy.tags ul.talks {
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); } }
 
 .talk .speakers .speaker {
   display: flex;
