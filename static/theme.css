@@ -1000,56 +1000,71 @@ form input {
     right: unset;
     width: 100%; } }
 
-.section.sessions ul.talks, .taxonomy.tags ul.talks {
+.section.sessions ul.talks,
+.taxonomy.tags ul.talks {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   flex-wrap: wrap; }
-  .section.sessions ul.talks li.talk, .taxonomy.tags ul.talks li.talk {
+  .section.sessions ul.talks li.talk,
+  .taxonomy.tags ul.talks li.talk {
     margin: 1rem;
-    width: 100%; }
-  .section.sessions ul.talks a, .taxonomy.tags ul.talks a {
+    flex: 1 0 400px; }
+  .section.sessions ul.talks a,
+  .taxonomy.tags ul.talks a {
     border: thin solid var(--darken-1);
     box-shadow: var(--space-1) var(--space-1) var(--space-2) var(--darken-2);
     transition: box-shadow var(--animation);
     border-radius: var(--space-2);
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     text-decoration: none;
-    color: inherit;
     height: 100%; }
-    .section.sessions ul.talks a:hover, .section.sessions ul.talks a:focus, .taxonomy.tags ul.talks a:hover, .taxonomy.tags ul.talks a:focus {
+    .section.sessions ul.talks a:hover, .section.sessions ul.talks a:focus,
+    .taxonomy.tags ul.talks a:hover,
+    .taxonomy.tags ul.talks a:focus {
       box-shadow: var(--space-2) var(--space-2) var(--space-2) var(--darken-3); }
-    .section.sessions ul.talks a h2, .section.sessions ul.talks a .info, .taxonomy.tags ul.talks a h2, .taxonomy.tags ul.talks a .info {
-      padding: var(--space-4); }
-    .section.sessions ul.talks a h2, .taxonomy.tags ul.talks a h2 {
+    .section.sessions ul.talks a .header,
+    .taxonomy.tags ul.talks a .header {
       display: flex;
       justify-content: space-between;
-      align-items: center; }
-    .section.sessions ul.talks a hr, .taxonomy.tags ul.talks a hr {
-      width: calc(100% - var(--space-3));
-      margin: 0 auto; }
-    .section.sessions ul.talks a .info, .taxonomy.tags ul.talks a .info {
-      flex-grow: 1; }
-      .section.sessions ul.talks a .info .tags, .taxonomy.tags ul.talks a .info .tags {
-        float: right; }
-    .section.sessions ul.talks a .speakers, .taxonomy.tags ul.talks a .speakers {
-      border: thin solid transparent;
+      align-items: start;
+      color: inherit; }
+      .section.sessions ul.talks a .header .info,
+      .section.sessions ul.talks a .header h2,
+      .taxonomy.tags ul.talks a .header .info,
+      .taxonomy.tags ul.talks a .header h2 {
+        padding: var(--space-4); }
+      .section.sessions ul.talks a .header .info,
+      .taxonomy.tags ul.talks a .header .info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .section.sessions ul.talks a .header .info .tags,
+        .taxonomy.tags ul.talks a .header .info .tags {
+          margin-right: 5px;
+          padding: 5px; }
+    .section.sessions ul.talks a .speakers,
+    .taxonomy.tags ul.talks a .speakers {
       border-radius: var(--space-2);
       background: var(--base);
-      padding-left: 0; }
-    .section.sessions ul.talks a .speaker + .speaker, .taxonomy.tags ul.talks a .speaker + .speaker {
+      padding-left: 0;
+      color: var(--base-text); }
+    .section.sessions ul.talks a .speaker + .speaker,
+    .taxonomy.tags ul.talks a .speaker + .speaker {
       border-top: thin solid var(--darken-1); }
 
 @supports (grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))) {
-  .section.sessions ul.talks, .taxonomy.tags ul.talks {
+  .section.sessions ul.talks,
+  .taxonomy.tags ul.talks {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); } }
 
 .talk .speakers .speaker {
   display: flex;
   align-items: center;
-  padding: var(--space-1) var(--space-3);
+  padding: var(--space-3) var(--space-3);
   --img-size: 2rem; }
   .talk .speakers .speaker .speaker-img {
     --img-size: 3rem;
@@ -1060,7 +1075,10 @@ form input {
     margin-right: var(--space-4); }
   .talk .speakers .speaker .info {
     display: flex;
-    flex-direction: column; }
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1; }
   .talk .speakers .speaker .speaker-company {
     margin: 10px 0 0 0; }
     .talk .speakers .speaker .speaker-company img {
@@ -1068,7 +1086,7 @@ form input {
     .talk .speakers .speaker .speaker-company figcaption {
       display: none; }
   .talk .speakers .speaker p {
-    max-width: 320px; }
+    max-width: 400px; }
 
 .page.sessions .talk header {
   border-radius: var(--space-2);

@@ -3,7 +3,7 @@
     .speaker {
       display: flex;
       align-items: center;
-      padding: var(--space-1) var(--space-3);
+      padding: var(--space-3) var(--space-3);
       --img-size: 2rem;
 
       .speaker-img {
@@ -17,7 +17,10 @@
 
       .info {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-grow: 1;
       }
 
       .speaker-company {
@@ -33,7 +36,7 @@
       }
 
       p {
-        max-width: 320px;
+        max-width: 400px;
       }
     }
   }

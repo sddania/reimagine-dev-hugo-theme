@@ -8,7 +8,7 @@
 		{{ $types := (slice "org" "talk" "Quickie" "Keynote" "unconference") }}
 		{{ range $sessions }}
 			{{ if intersect (slice .Params.talkType) $types }}
-		<li class="talk tag-{{ anchorize (delimit (.Params.tags | default (slice)) "" ) }}">{{ partial "session.html" . }}</li>
+		<li class="talk">{{ partial "session.html" . }}</li>
 			{{ end }}
 		{{ end }}
 	</ul>
