@@ -24,16 +24,9 @@
 
 		<ul class="talks">
 			{{ range where .Site.RegularPages "Params.speakers" "intersect" (slice .Page.Params.id) }}
-			<li>
-				<a href="{{ .URL }}" class="visually-hidden">{{ .Title }}</a>
-				<a href="{{ .URL }}" class="talk tag-{{ anchorize (delimit .Params.tags "" ) }}">
-				<div class="tags">
-					{{ range .Params.tags }}
-					<span>{{ . }}</span>
-					{{ end }}
-				</div>
-				<span class="language {{ anchorize .Params.language }}"></span>
-				<h3 class="text">{{ .Title }}</h3>
+			<li class="talk tag-{{ anchorize (delimit .Params.tags "" ) }}">
+				<a href="{{ .URL }}">
+					<span>{{ .Title }}</span>
 				</a>
 			</li>
 			{{ end }}
@@ -43,15 +36,13 @@
 </div>
 
 <section class="speaker">
-
 	<header>
 		<h2>{{ .Page.Params.country }}</h2>
 		<figure class="speaker-company">
 			<img src="{{ .Page.Params.companyLogo }}" alt="{{ .Page.Params.company }}">
-			<figcaption>{{ .Page.Params.company }}</figcaption>
+			<figcaption class="visually-hidden">{{ .Page.Params.company }}</figcaption>
 		</figure>
 	</header>
-
 	<div class="bio">
 		{{ .Content }}
 	</div>

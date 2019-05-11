@@ -1075,26 +1075,42 @@ form input {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    flex-grow: 1; }
-  .talk .speakers .speaker .speaker-company {
-    margin: 10px 0 0 0; }
-    .talk .speakers .speaker .speaker-company img {
-      height: 2rem; }
-    .talk .speakers .speaker .speaker-company figcaption {
-      display: none; }
+    width: 100%; }
+    .talk .speakers .speaker .info .speaker-info {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+    .talk .speakers .speaker .info .speaker-company {
+      margin: 0 0 0 0; }
+      .talk .speakers .speaker .info .speaker-company img {
+        height: 2rem; }
+      .talk .speakers .speaker .info .speaker-company figcaption {
+        display: none; }
   .talk .speakers .speaker p {
-    max-width: 400px; }
+    max-width: 400px;
+    font-size: 14px; }
 
-.page.sessions .talk header {
-  border-radius: var(--space-2);
-  padding: var(--space-2);
+.talk .talk--info {
   display: flex;
-  align-items: center; }
-  .page.sessions .talk header h1 {
-    flex-grow: 1; }
-  .page.sessions .talk header .tags {
-    margin-right: 1ch;
-    white-space: nowrap; }
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.page.sessions .talk .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  border-radius: var(--space-2); }
+  .page.sessions .talk .header .info,
+  .page.sessions .talk .header h2 {
+    padding: var(--space-4); }
+  .page.sessions .talk .header .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: baseline; }
+    .page.sessions .talk .header .info .tags {
+      padding: var(--space-2);
+      margin-bottom: var(--space-2); }
 
 .page.sessions .talk .detail {
   margin: var(--space-2) 0;
@@ -1104,15 +1120,17 @@ form input {
   display: flex; }
 
 .page.sessions .talk .content {
-  margin: var(--space-4) 0;
-  flex: 1 1 auto; }
+  margin: 0 15px;
+  flex: 1 1 320px; }
 
 .page.sessions .talk .speakers {
   flex: 0 1 auto;
   list-style: none;
   padding: 0;
   align-self: start;
-  border-radius: var(--space-2); }
+  border-radius: var(--space-2);
+  margin: 0;
+  max-width: 320px; }
   .page.sessions .talk .speakers .speaker {
     margin: var(--space-4) 0;
     border: thin solid var(--darken-1);
@@ -1165,7 +1183,7 @@ form input {
   flex-wrap: wrap; }
   .section.speakers ul.speakers > li {
     margin: 1rem;
-    flex: 1 0 300px; }
+    flex: 1 0 320px; }
 
 .section.speakers a.speaker {
   padding: var(--space-4);

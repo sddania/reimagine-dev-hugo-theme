@@ -20,43 +20,63 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        flex-grow: 1;
-      }
+        width: 100%;
 
-      .speaker-company {
-        margin: 10px 0 0 0;
-
-        img {
-          height: 2rem;
+        .speaker-info {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
         }
+        .speaker-company {
+          margin: 0 0 0 0;
 
-        figcaption {
-          display: none;
+          img {
+            height: 2rem;
+          }
+
+          figcaption {
+            display: none;
+          }
         }
       }
 
       p {
         max-width: 400px;
+        font-size: 14px;
       }
     }
+  }
+
+  .talk--info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
 .page.sessions {
   .talk {
-    header {
-      border-radius: var(--space-2);
-      padding: var(--space-2);
+    .header {
       display: flex;
-      align-items: center;
+      justify-content: space-between;
+      align-items: stretch;
+      border-radius: var(--space-2);
 
-      h1 {
-        flex-grow: 1;
+      .info,
+      h2 {
+        padding: var(--space-4);
       }
 
-      .tags {
-        margin-right: 1ch;
-        white-space: nowrap;
+      .info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: baseline;
+
+        .tags {
+          padding: var(--space-2);
+          margin-bottom: var(--space-2);
+        }
       }
     }
 
@@ -69,8 +89,8 @@
     }
 
     .content {
-      margin: var(--space-4) 0;
-      flex: 1 1 auto;
+      margin: 0 15px;
+      flex: 1 1 320px;
     }
 
     .speakers {
@@ -79,6 +99,8 @@
       padding: 0;
       align-self: start;
       border-radius: var(--space-2);
+      margin:0;
+      max-width: 320px;
 
       .speaker {
         margin: var(--space-4) 0;
@@ -92,8 +114,7 @@
 
         &:hover,
         &:focus {
-          box-shadow: var(--space-2) var(--space-2) var(--space-2)
-            var(--darken-3);
+          box-shadow: var(--space-2) var(--space-2) var(--space-2) var(--darken-3);
         }
 
         text-decoration: none;
